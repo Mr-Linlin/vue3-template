@@ -1,16 +1,20 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
+  // {
+  //   path: '/',
+  //   component: () => import('@/views/layout/index.vue'),
+  //   redirect: '/chat',
+  //   children: [
+  //     {
+  //       path: '/chat',
+  //       component: () => import('@/views/chat/index.vue')
+  //     }
+  //   ]
+  // },
   {
     path: '/',
-    component: () => import('@/views/layout/index.vue'),
-    redirect: '/chat',
-    children: [
-      {
-        path: '/chat',
-        component: () => import('@/views/chat/index.vue')
-      }
-    ]
+    component: () => import('@/views/login/index.vue')
   },
   {
     path: '/login',
